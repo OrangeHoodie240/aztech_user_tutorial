@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .subject img {
+            width: 700px; 
+            height: auto;
+        }
+
+        main {
+            width: 60vw; 
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+
+        .subject {
+            border-bottom: solid 1px black; 
+            margin-bottom: 10vh;
+        }
+        .subject p{
+            width: 700px;
+        }
+
+        @media screen and (max-width: 699px) {
+            .subject img, .subject p {
+                width: 100%; 
+                height: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <div>
+            <ul>
+                <li><a href="#changing_your_own_password">Changing Your Own Password</a></li>
+                <li><a href="#navigating_an_inspected_user">Navigating An Inspected User</a></li>
+                <li><a href="#finding_a_users_certificates">Finding A User's Certificates</a></li>
+                
+            </ul>
+        </div>
+
+
+
+        <div id="changing_your_own_password" class="subject"><h2>Changing Your Password</h2>
+                <img src="./change_your_own_password.png" />
+                <br />
+                <p>
+                    Find and click the change password button in the top right corner of the screen.
+                </p>
+                <p>
+                    After you click on it, the button will change to say "Hide Form", which when clicked 
+                    will hide the form from view.
+                </p> 
+
+                <br />
+                <br />
+
+                <img src="./change_your_own_password_form.png" />
+                <br />
+                 <p>Fill out the form and submit.</p>
+    
+                <br />
+                <br />
+    
+        </div>
+
+
+        <div class="subject" id="navigating_an_inspected_user">
+            <h2>Navigating Tables</h2>
+            
+            <img src="./customer_user_table.png" />
+            <p>
+                Information is divided into four tables. We select a table in order to view it. 
+                The currently selected table is lighter shade of orange than the others. 
+            </p>
+            <p>
+                We have search boxes above the user table that allow us to filter the rows in the selected table 
+                by the values of certain columns.
+            </p>
+            <p>
+                We can click the columns in order to reorder the rows by their value in the clicked column.
+            </p>
+           
+        </div>
+        
+        <div class="subject" id="finding_a_users_certificates">
+            <h2>Finding Certificates</h2>
+            
+            <img src="./certificates_column_on_shippment_history.png" />
+            <p>
+                The certificates associated with an order are to be found on your shipment history page. 
+            </p>
+            <p>
+                On this table there will be a column named <strong>Certificates?</strong>. This will be have either 
+                a Yes or No value. Those rows with a Yes value will have certificates attached. We simply click the 
+                row to select it and a list of links to all the certificates associated to that row will pop up.
+            </p>
+           
+        </div>
+    </main>
+
+    
+
+</body>
+</html>
